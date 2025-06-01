@@ -1,0 +1,21 @@
+@import url("Iosevka.css");
+:root {
+	--font: #cdd6f4;
+	--background: #1e1e2e;
+	background-color: var(--background);
+	color: var(--font);
+	font-family: "Iosevka Web";
+}
+h1 {
+	font-size: 4rem;
+	font-weight: normal;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translate(50%, -50%)
+}
