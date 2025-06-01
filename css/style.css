@@ -5,12 +5,25 @@
 	background-color: var(--background);
 	color: var(--font);
 	font-family: "Iosevka Web";
+	padding: 6%;
 }
 h1 {
-	font-size: 4rem;
+	font-size: 5rem;
+	padding-top: 0%;
+	padding-left: 5%;
+	margin: auto;
+}
+h2 {
+	font-size: 2rem;
+	padding-bottom: 0%;
+	margin: auto;
 	font-weight: normal;
 }
-.center {
+h3 {
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+.under-construction {
   margin: auto;
   width: 50%;
   padding: 10px;
