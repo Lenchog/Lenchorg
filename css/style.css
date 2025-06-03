@@ -23,12 +23,3 @@ h3 {
 	font-size: 1.5rem;
 	font-weight: normal;
 }
-.under-construction {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	transform: translate(50%, -50%)
-}
