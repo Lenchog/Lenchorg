@@ -1,9 +1,13 @@
 @import url("Iosevka.css");
 :root {
-	--font: #cdd6f4;
+	--text: #cdd6f4;
 	--background: #1e1e2e;
+	--crust: #11111b;
+	--mantle: #181825;
+	--red: #f38ba8;
+	--green: #a6e3a1;
 	background-color: var(--background);
-	color: var(--font);
+	color: var(--text);
 	font-family: "Iosevka Web";
 	padding: 6%;
 }
@@ -22,4 +26,80 @@ h2 {
 h3 {
 	font-size: 1.5rem;
 	font-weight: normal;
+}
+.box {
+	background-color: var(--mantle);
+	border: 3px solid var(--crust);
+	border-radius: 10px;
+	display: inline-block;
+	padding: 15px;
+}
+.small {
+	font-size: 0.75em;
+}
+.hex:before {
+		 content: " ";
+		 width: 0; height: 0;
+		 border-bottom: 30px solid #6C6;
+		 border-left: 52px solid transparent;
+		 border-right: 52px solid transparent;
+		 position: absolute;
+		 top: -30px;
+ }
+ 
+ .hex {
+		 margin-top: 30px;
+		 width: 104px;
+		 height: 60px;
+		 background-color: #6C6;
+		 position:relative;
+ }
+ 
+ .hex:after {
+		 content: "";
+		 width: 0; 
+		 position: absolute;
+		 bottom: -30px;
+		 border-top: 30px solid #6C6;
+		 border-left: 52px solid transparent;
+		 border-right: 52px solid transparent;
+ }
+.hexagon {
+	width: 0;
+	border-bottom: 30px solid #6C6;
+	border-left: 52px solid transparent;
+	border-right: 52px solid transparent;
+
+	width: 104px;
+	height: 60px;
+	background-color: #6C6;
+
+	width: 0;
+	border-top: 30px solid #6C6;
+	border-left: 52px solid transparent;
+	border-right: 52px solid transparent;
+}
+.text {
+	color: var(--text);
+	border: 1px solid var(--text);
+}
+.red {
+	color: var(--red);
+	border: 1px solid var(--red);
+}
+.green {
+	color: var(--green);
+	border: 1px solid var(--green);
+}
+.node {
+  background: var(--crust);
+  height: fit-content();
+  width: fit-content();
+	aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 1em;
+	border: 1px solid var(--text);
 }
