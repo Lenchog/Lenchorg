@@ -6,7 +6,8 @@
 	--mantle: #181825;
 	--red: #f38ba8;
 	--green: #a6e3a1;
-  --hexagon-size: 150px;
+  --hexagon-height: 150px;
+  --hexagon-width: calc(150px * sqrt(3) / 2);
   --hexagon-borders: 3px;
 	background-color: var(--background);
 	color: var(--text);
@@ -39,10 +40,10 @@ h3 {
 .hex-container {
 	display: inline-block;
 	position: relative;
-	height: var(--hexagon-size); /* adjust to control the size  */
-	width: var(--hexagon-size); /* adjust to control the size  */
-	margin-top: calc(var(--hexagon-size) / -8);
-	margin-bottom: calc(var(--hexagon-size) / -8);
+	height: var(--hexagon-height); /* adjust to control the size  */
+	width: var(--hexagon-width);
+	margin-top: calc(var(--hexagon-height) / -8);
+	margin-bottom: calc(var(--hexagon-height) / -8);
 	aspect-ratio: cos(30deg);
 	clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
 	background: #3b8686;
@@ -52,8 +53,8 @@ h3 {
 	position: absolute;
 	top: var(--hexagon-borders);
 	left: var(--hexagon-borders);
-	width: calc(var(--hexagon-size) - var(--hexagon-borders) * 2);
-	height: calc(var(--hexagon-size) - var(--hexagon-borders) * 2);
+	height: calc(var(--hexagon-height) - var(--hexagon-borders) * 2);
+	width: calc(var(--hexagon-width) - var(--hexagon-borders) * 2);
 	background: var(--crust);
 	align-items: center;
 	justify-content: center;
@@ -62,13 +63,13 @@ h3 {
 }
 
 .hex-row.even {
-	padding-left: calc(cos(30deg) * (var(--hexagon-size) / 2) + var(--hexagon-size) / 11);
+	padding-left: calc(cos(30deg) * (var(--hexagon-width) / 2) + var(--hexagon-width) / 11);
 }
 .hex-row {
 	display: flex;
 	flex-direction: row;
-	gap: calc(var(--hexagon-size) / 20);
-	margin-top: calc(var(--hexagon-size) / 20);
+	gap: calc(var(--hexagon-height) / 20);
+	margin-top: calc(var(--hexagon-height) / 20);
 }
 
 .text {
