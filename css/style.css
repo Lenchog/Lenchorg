@@ -1,6 +1,9 @@
 @import url("Iosevka.css");
 :root {
 	--text: #cdd6f4;
+	--blue: #89b4fa;
+	--sapphire: #74c7ec;
+	--lavender: #b4befe;
 	--background: #1e1e2e;
 	--crust: #11111b;
 	--mantle: #181825;
@@ -15,6 +18,7 @@
 	color: var(--text);
 	font-family: "Iosevka Web";
 	padding: 6%;
+	max-width: 100ch;
 }
 h1 {
 	font-size: 5rem;
@@ -31,6 +35,15 @@ h2 {
 h3 {
 	font-size: 1.5rem;
 	font-weight: normal;
+}
+a {
+	color: var(--blue);
+}
+a:hover {
+	color: var(--lavender)
+}
+a:visited {
+	color: var(--sapphire)
 }
 .box {
 	background-color: var(--mantle);
